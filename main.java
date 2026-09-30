@@ -7,33 +7,37 @@
 
 import java.util.*;
 import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
 public class main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-    String nombre;
-    double salario;   
-    int opcion;
-    
-    System.out.println("___________________");
-    System.out.println("1.Es programador");
-    System.out.println("2.Es medico");
-    System.out.println("3.Es administrativo \n");
-    System.out.println("Ingrese una opcion");
-    opcion = sc.nextInt();
+        String nombre;
+        double salario = 600;
+        int opcion;
 
-    switch (opcion) {
+        System.out.println("___________________");
+        System.out.println("1.Es programador");
+        System.out.println("2.Es medico");
+        System.out.println("3.Es administrativo \n");
+        System.out.println("Ingrese una opcion");
+        opcion = sc.nextInt();
 
-        case 1:
-            
+        switch (opcion) {
 
-        case 2:
+            case 1:
+            salario = salario + (salario * 0.25);
+            break;
 
-            
-        case 3:
+            case 2:
 
-    
-            
-    }
+            break;
+            case 3:
+
+            break;
+        }
+        JOptionPane.showMessageDialog(null, "El salario es: "+salario);
     }
 }
